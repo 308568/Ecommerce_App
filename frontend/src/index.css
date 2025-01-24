@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.active hr {
+    display: block;
+    
+}
+
+a.active p {
+    color: rgb(248, 70, 248);
+}
+
+
+a.active:hover p {
+    transform: scale(1.1); /* Scales the text to 120% of its original size */
+    color: rgb(107, 201, 83); /* Optional: You can also change the color on hover */
+}
+
+*{
+    font-family: Outfit;
+}
+.prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+  }
+  
+
+  @media(max-width:640px){
+     a.active{
+        background-color: black;
+        color: white;
+     }
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
