@@ -10,8 +10,9 @@ export const ShopContext = createContext();
 const ShopContextProvider = ({ children }) => {
     const currency = "$";
     const delivery_fee = 10;
-    //  const backendUrl = import.meta.env.VITE_BACKEND_URL
-     const backendUrl = 'http://localhost:4000'
+    const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:4000';
+
+    //  const backendUrl = 'http://localhost:4000'
     const [search,setSearch]  = useState('')
     const [showSearch,setShowSearch] = useState(false)
   
